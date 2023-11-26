@@ -1,7 +1,7 @@
 # mandelbulb
 Compute mandelbul (3d fractal inspired from Mandelbrot set) animations<br/>
-usage: <span syle='font-family:monospace'>mandelbulb.exe &lt;size&gt; &lt;output&gt; [nb]</span><br/>
-ex: <span syle='font-family:monospace'>mandelbulb.exe 512 mb1 64</span><br/>
+usage: <span style='font-family:monospace'>mandelbulb.exe &lt;size&gt; &lt;output&gt; [nb]</span><br/>
+ex: <span style='font-family:monospace'>mandelbulb.exe 512 mb1 64</span><br/>
 Save a bmp image or sequence of bmp images you can use with external tool like VirtualDub (free) to create a movie.<br/>
 <br/>
 The original code is js code from Roy van Rijn : https://github.com/royvanrijn/mandelbulb.js/blob/master/mandelbulb.html<br/>
