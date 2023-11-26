@@ -4,7 +4,7 @@ usage: mandelbulb.exe <size> <output> [nb]
 ex: mandelbulb.exe 512 mb1 64
 Save a bmp image or sequence of bmp images you can use with external tool like VirtualDub (free) to create a movie.
 
-The original code is js code from Roy van Rijn : [http://www.massal.net/article/raytrace/page2.html](https://github.com/royvanrijn/mandelbulb.js/blob/master/mandelbulb.html)https://github.com/royvanrijn/mandelbulb.js/blob/master/mandelbulb.html
+The original code is js code from Roy van Rijn : https://github.com/royvanrijn/mandelbulb.js/blob/master/mandelbulb.html
 
 tip: compile with C/C++ > Optimization > Fast /Ot
 
