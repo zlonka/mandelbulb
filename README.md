@@ -1,14 +1,14 @@
 # mandelbulb
-Compute mandelbul (3d fractal inspired from Mandelbrot set) animations
-usage: mandelbulb.exe <size> <output> [nb]
-ex: mandelbulb.exe 512 mb1 64
-Save a bmp image or sequence of bmp images you can use with external tool like VirtualDub (free) to create a movie.
+Compute mandelbul (3d fractal inspired from Mandelbrot set) animations<br/>
+usage: <span syle='font-family:monospace'>mandelbulb.exe <size> <output> [nb]</span><br/>
+ex: mandelbulb.exe 512 mb1 64<br/>
+Save a bmp image or sequence of bmp images you can use with external tool like VirtualDub (free) to create a movie.<br/>
 <br/>
-The original code is js code from Roy van Rijn : https://github.com/royvanrijn/mandelbulb.js/blob/master/mandelbulb.html
+The original code is js code from Roy van Rijn : https://github.com/royvanrijn/mandelbulb.js/blob/master/mandelbulb.html<br/>
 <br/>
-tip: compile with C/C++ > Optimization > Fast /Ot
+tip: compile with C/C++ > Optimization > Fast /Ot<br/>
 <br/>
-mandelbulb.ini file contains all parameters, static (xxx) or dynamic (xxxDelta) ex:
+mandelbulb.ini file contains all parameters, static (xxx) or dynamic (xxxDelta) ex:<br/>
 <pre>
 viewAngle 150
 viewAngleDelta 2
