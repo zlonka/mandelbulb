@@ -1,4 +1,4 @@
-// code from here : http://www.massal.net/article/raytrace/page2.html
+// original js code from here : https://github.com/royvanrijn/mandelbulb.js/blob/master/mandelbulb.html
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
