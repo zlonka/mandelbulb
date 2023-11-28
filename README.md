@@ -6,11 +6,11 @@ Save a bmp image or sequence of bmp images you can use with external tool like V
 <br/>
 The original code is js code from Roy van Rijn : https://github.com/royvanrijn/mandelbulb.js/blob/master/mandelbulb.html<br/>
 <br/>
-tip: on Windows compile with C/C++ > Optimization > Fast /Ot and use openmp (/Qpar /openmp). On linux add following lines :
+tip: on Windows compile with C/C++ &gt; Optimization &gt; Fast /Ot and use openmp (/Qpar /openmp). On linux add following lines :
 <pre>
-#include <stdio.h>
-#include <stdlib.h>
-#include <memory.h>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;memory.h&gt;
 </pre>
 and compile with g++ -O3 -fopenmp mandelbulb.cpp
 <br/>
