@@ -1,6 +1,10 @@
 // original js code from here : https://github.com/royvanrijn/mandelbulb.js/blob/master/mandelbulb.html
 #define _CRT_SECURE_NO_WARNINGS
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <memory.h>
+
 #include <iostream>
 #include <fstream>
 #include <cmath>
@@ -431,7 +435,7 @@ void animate() {
         draw(rgb + icurrenty * (3 * cWidth), icurrenty);
     }
 
-    char fout_anim[1024];
+    char fout_anim[1024+16];
     sprintf(fout_anim, "%s_%04d.bmp", fout, tick);
     fprintf(stderr, "saving %s...\n", fout_anim);
     imageSave(fout_anim, cWidth, cHeight, rgb, IMAGE_BMP);
@@ -444,7 +448,7 @@ void load_ini() {
     char buf[512], w[80], kw[80];
     while (fgets(buf, 512, f)) {
         if (buf[0] == '\n' || buf[0] == '\r' || buf[0] == '\0' || buf[0] == '#') continue;
-        sscanf(buf, "%s", &w);
+        sscanf(buf, "%s", w);
         strcpy(kw, "viewAngleDelta"); if (!strncmp(w, kw, strlen(kw))) { sscanf(buf + strlen(kw) + 1, "%lf", &viewAngleDelta); continue; }
         strcpy(kw, "viewAngle"); if (!strncmp(w, kw, strlen(kw))) { sscanf(buf + strlen(kw) + 1, "%lf", &viewAngle); continue; }
         strcpy(kw, "lightAngleDelta"); if (!strncmp(w, kw, strlen(kw))) { sscanf(buf + strlen(kw) + 1, "%lf", &lightAngleDelta); continue; }
